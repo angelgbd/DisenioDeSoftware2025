@@ -10,10 +10,10 @@
         
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
-        <class>com.hospital.entidades.Doctor</class>
-        <class>com.hospital.entidades.Paciente</class>
-        <class>com.hospital.entidades.Cita</class>
-        
+        <class>Entidades.Doctor</class>
+        <class>Entidades.Paciente</class>
+        <class>Entidades.Cita</class>
+            
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/reporteconsultashospital"/>

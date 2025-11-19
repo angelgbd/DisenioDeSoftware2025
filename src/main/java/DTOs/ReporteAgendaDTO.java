@@ -1,4 +1,4 @@
-package com.hospital.negocio.dto;
+package DTOs;
 
 import java.time.LocalDateTime;
 
