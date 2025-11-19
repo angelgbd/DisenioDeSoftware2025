@@ -1,6 +1,15 @@
-C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\com\example\consultareportes\ConsultaReportes.java
+C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\DAOS\CitaDAO.java
+C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\DAOS\EntityManagerUtil.java
+C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\DTOs\ReporteAgendaDTO.java
+C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\DTOs\ReporteHistorialDTO.java
 C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\Entidades\Cita.java
 C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\Entidades\Doctor.java
 C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\Entidades\EstadoCita.java
 C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\Entidades\Paciente.java
 C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\Entidades\Persona.java
+C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\Interfaces\ICitaDAO.java
+C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\Interfaces\IGestorReportes.java
+C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\Main\Main.java
+C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\Negocio\GestorReportes.java
+C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\Validaciones\ValidacionReportes.java
+C:\Users\angel\OneDrive\Documentos\NetBeansProjects\ConsultaReportes\src\main\java\Vistas\FrameReportes.java

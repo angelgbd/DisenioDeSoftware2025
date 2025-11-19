@@ -15,7 +15,6 @@ public class EntityManagerUtil {
 
     static {
         try {
-            // "HospitalPU" debe coincidir EXACTAMENTE con tu persistence.xml
             FACTORY = Persistence.createEntityManagerFactory("HospitalPU");
         } catch (Throwable ex) {
             System.err.println("Error al iniciar la creación de EntityManagerFactory: " + ex);

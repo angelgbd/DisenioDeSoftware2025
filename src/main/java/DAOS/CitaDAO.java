@@ -15,7 +15,7 @@ import Interfaces.ICitaDAO;
 public class CitaDAO implements ICitaDAO {
 
     /**
-     * Caso de Uso: CONSULTAR HISTORIAL (Vista Paciente)
+     * Caso de Uso: CONSULTAR HISTORIAL
      * Obtiene todas las citas pasadas de un paciente específico.
      * * @param pacienteId ID del paciente que ha iniciado sesión
      * @return Lista de DTOs lista para mostrar en la tabla
