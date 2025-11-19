@@ -26,7 +26,7 @@ public class CitaDAO implements ICitaDAO {
         try {
             // JPQL: Construimos el objeto Java directamente en la consulta
             // Nota: Usamos el nombre completo de la clase (paquete incluido)
-            String jpql = "SELECT new antesDTOs.ReporteHistorialDTO("
+            String jpql = "SELECT new DTOs.ReporteHistorialDTO("
                         + "   c.id, "
                         + "   c.fechaHora, "
                         + "   c.paciente.nombre || ' ' || c.paciente.apellido, " // Concatenamos nombre completo
