@@ -18,13 +18,12 @@ import java.util.List;
 public class Doctor extends Persona {
 
     @Column(nullable = false, length = 50)
-    private String especialidad; // Ej: Cardiología, Pediatría
+    private String especialidad; 
 
     @Column(name = "cedula_profesional", unique = true, nullable = false)
     private String cedulaProfesional;
 
-    // Relación inversa: Un doctor -> Muchas citas
-    // "mappedBy" indica que la dueña de la relación es la entidad 'Cita' (campo 'doctor')
+    // Relación uno a muchos: Un doctor -> Muchas citas
     @OneToMany(mappedBy = "doctor", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Cita> historialCitas = new ArrayList<>();
 

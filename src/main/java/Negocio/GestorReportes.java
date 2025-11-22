@@ -1,4 +1,4 @@
-package Negocio;
+    package Negocio;
 
 import DTOs.ReporteAgendaDTO;
 import DTOs.ReporteHistorialDTO;

@@ -25,15 +25,15 @@ public class Cita {
     @Column(name = "fecha_hora", nullable = false)
     private LocalDateTime fechaHora;
 
-    @Column(columnDefinition = "TEXT") // Para textos largos en BD (MySQL/Postgres)
+    @Column(columnDefinition = "TEXT") // Se usa para textos largos en la base de datos
     private String diagnostico;
 
     @Column(length = 500)
-    private String tratamiento; // Receta o instrucciones
+    private String tratamiento; // Receta o instrucciones de tratamiento
 
     @Enumerated(EnumType.STRING)
     @Column(length = 20)
-    private EstadoCita estado; // Usamos un Enum para evitar errores de texto
+    private EstadoCita estado; // Se usa enum para definir un tipo
 
     // RELACIONES (Foreign Keys)
     
@@ -46,5 +46,62 @@ public class Cita {
     private Paciente paciente;
 
     // Getters y Setters
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public LocalDateTime getFechaHora() {
+        return fechaHora;
+    }
+
+    public void setFechaHora(LocalDateTime fechaHora) {
+        this.fechaHora = fechaHora;
+    }
+
+    public String getDiagnostico() {
+        return diagnostico;
+    }
+
+    public void setDiagnostico(String diagnostico) {
+        this.diagnostico = diagnostico;
+    }
+
+    public String getTratamiento() {
+        return tratamiento;
+    }
+
+    public void setTratamiento(String tratamiento) {
+        this.tratamiento = tratamiento;
+    }
+
+    public EstadoCita getEstado() {
+        return estado;
+    }
+
+    public void setEstado(EstadoCita estado) {
+        this.estado = estado;
+    }
+
+    public Doctor getDoctor() {
+        return doctor;
+    }
+
+    public void setDoctor(Doctor doctor) {
+        this.doctor = doctor;
+    }
+
+    public Paciente getPaciente() {
+        return paciente;
+    }
+
+    public void setPaciente(Paciente paciente) {
+        this.paciente = paciente;
+    }
+    
     
 }

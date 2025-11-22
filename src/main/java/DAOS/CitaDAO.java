@@ -1,4 +1,4 @@
-package DAOS;
+    package DAOS;
 
 import DTOs.ReporteAgendaDTO;
 import DTOs.ReporteHistorialDTO;
@@ -9,7 +9,7 @@ import Interfaces.ICitaDAO;
 
 /**
  *
- * @author angel
+ * @author Angel Beltran
  */
 
 public class CitaDAO implements ICitaDAO {
@@ -24,12 +24,12 @@ public class CitaDAO implements ICitaDAO {
     public List<ReporteHistorialDTO> consultarHistorialPorPaciente(Long pacienteId) {
         EntityManager em = EntityManagerUtil.getEntityManager();
         try {
-            // JPQL: Construimos el objeto Java directamente en la consulta
-            // Nota: Usamos el nombre completo de la clase (paquete incluido)
+            // JPQL: Se contruye el objeto java en la consulta
+            // Nota: Se usa el nombre de la clase
             String jpql = "SELECT new DTOs.ReporteHistorialDTO("
                         + "   c.id, "
                         + "   c.fechaHora, "
-                        + "   c.paciente.nombre || ' ' || c.paciente.apellido, " // Concatenamos nombre completo
+                        + "   c.paciente.nombre || ' ' || c.paciente.apellido, " // Se concatena nombre completo
                         + "   c.doctor.nombre || ' ' || c.doctor.apellido, "
                         + "   c.doctor.especialidad, "
                         + "   c.diagnostico, "
@@ -58,7 +58,7 @@ public class CitaDAO implements ICitaDAO {
     public List<ReporteAgendaDTO> consultarAgendaPorDoctor(Long doctorId) {
         EntityManager em = EntityManagerUtil.getEntityManager();
         try {
-            // Para la agenda, al doctor le interesa ver el nombre del PACIENTE
+            // Se ajusta para que el doctor pueda ver el nombre del paciente
             String jpql = "SELECT new DTOs.ReporteAgendaDTO("
                         + "   c.id, "
                         + "   c.fechaHora, "
@@ -67,9 +67,7 @@ public class CitaDAO implements ICitaDAO {
                         + "   c.estado"
                         + ") "
                         + "FROM Cita c "
-                        + "WHERE c.doctor.id = :doctorId "
-                        // Filtramos para no ver citas viejas, opcional:
-                        // + "AND c.fechaHora >= CURRENT_DATE " 
+                        + "WHERE c.doctor.id = :doctorId " //Se filtra para no ver citas viejas
                         + "ORDER BY c.fechaHora ASC";
 
             TypedQuery<ReporteAgendaDTO> query = em.createQuery(jpql, ReporteAgendaDTO.class);

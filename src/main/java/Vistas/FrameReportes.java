@@ -30,7 +30,7 @@ public class FrameReportes extends JFrame {
     private JTable tblReportes;
     private DefaultTableModel modeloTabla;
     private JLabel lblTitulo;
-    private final IGestorReportes gestorReportes; // Negocio
+    private final IGestorReportes gestorReportes; // Conexion con Negocio
 
     public FrameReportes() {
         // Se inicia la capa de Vistas
@@ -152,19 +152,19 @@ public class FrameReportes extends JFrame {
         }
     }
 
-    // Métodos auxiliares para definir las columnas según el reporte
+    // Métodos auxiliares segun el reporte
     private void configurarTablaPaciente() {
         modeloTabla.addColumn("Fecha");
         modeloTabla.addColumn("Doctor");
         modeloTabla.addColumn("Especialidad");
-        modeloTabla.addColumn("Diagnóstico"); // Columna clave para pacientes
+        modeloTabla.addColumn("Diagnóstico"); 
         modeloTabla.addColumn("Estado");
     }
 
     private void configurarTablaDoctor() {
         modeloTabla.addColumn("Fecha y Hora");
         modeloTabla.addColumn("Paciente");
-        modeloTabla.addColumn("DNI Paciente"); // Dato clave para doctores
+        modeloTabla.addColumn("DNI Paciente"); 
         modeloTabla.addColumn("Estado Cita");
     }
 }

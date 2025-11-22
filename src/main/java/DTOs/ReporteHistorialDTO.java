@@ -1,4 +1,4 @@
-package DTOs;
+    package DTOs;
 
 import java.time.LocalDateTime;
 
@@ -18,7 +18,7 @@ public class ReporteHistorialDTO {
     private String diagnostico;     
     private String estado;          
 
-    // Constructor que usará JPA (JPQL)
+    // Constructor que usará JPA 
     public ReporteHistorialDTO(Long idCita, LocalDateTime fechaHora, 
                                String nombrePaciente, String nombreDoctor, 
                                String especialidad, String diagnostico, Enum<?> estado) {

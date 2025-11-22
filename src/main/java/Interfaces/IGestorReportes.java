@@ -11,7 +11,7 @@ public interface IGestorReportes {
 
     /**
      * Obtiene el historial médico de un paciente.
-     * Puede incluir validaciones de negocio (ej: verificar si el paciente está activo).
+     * Puede incluir validaciones de negocio 
      */
     List<ReporteHistorialDTO> obtenerHistorialPaciente(Long idPaciente) throws Exception;
 

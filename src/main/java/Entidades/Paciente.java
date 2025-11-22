@@ -27,7 +27,7 @@ public class Paciente extends Persona {
     @Column(name = "seguro_medico")
     private String seguroMedico;
 
-    // Relación inversa: Un paciente -> Muchas citas
+    // Relación uno a muchos: Un paciente -> Muchas citas
     @OneToMany(mappedBy = "paciente", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Cita> historialMedico = new ArrayList<>();
 
